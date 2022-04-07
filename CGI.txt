@@ -1,0 +1,95 @@
+A -> B static   - 1,2 pkg
+B -> C Dync    - no
+B -> D static  - 1
+D -> E Dync   -  1 pkg (sep)
+
+a, b, E -> COBOL +DB2
+C, D -> cobol
+
+PLAN, package 
+
+3rd - temp
+4th - creating GDG  - created 
+5th - creating GDG (temp + GDG) - failed...  0
+
+
+322 -> 
+
+varchar (400) - extract 200,300
+
+seelct substr(colum(200,100))
+
+*************
+
+1. i used a file in INPUT mode what will happen if i try to write?
+2. -501 error
+3. i used declared a file as FB in cobol and in JCL it's VB, what will happen
+4. what error when the cursor is not open and you try to fetch
+
+*****************
+IF 
+	disp 123
+	IF
+		continue
+		disp 456
+	END-IF
+	NEXT sentence
+	disp XYZ
+END-IF
+**************
+
+F1 -> P1 
+F1N = 'TXN'
+F2 -> P2  
+F2N = 'MASTER'
+
+READ F1, F2
+
+WHEN P1 = P2 
+	WRITE P1 AND F1N
+
+WHEN P1 > P2
+	WRITE P2 AND F2N
+CALL PARA ===== UNTIL P1 < P2
+	READ F2
+	IF P1 = P2
+	WRITE P1 AND F1N
+	ELSE IF P1 > P2
+	WRITE P2 AND F2N
+=====
+
+WHEN P1 < P2
+	READ P1 AND F1N
+CALL PARA ===== UNTIL P1 > P2
+	READ F1
+	IF P1 = P2
+	WRITE P2 AND F2N
+	ELSE IF P2 > P1
+	WRITE P1 AND F1N
+
+
+1   -   3
+2   -   4
+
+F1 -> K1
+F2 -> K2 
+
+FILE1 = MATCH
+FILE2 = UNMATCHED
+
+READ F1 F2
+
+WHEN K1 = K2
+	WRITE FILE1
+WHEN K1 > K2 
+
+
+
+
+
+1 - 3
+2 - 5
+
+*****************************************
+
+	
